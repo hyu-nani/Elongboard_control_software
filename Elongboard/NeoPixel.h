@@ -11,14 +11,13 @@
 #endif
 
 
-// Which pin on the Arduino is connected to the NeoPixels?
 #define LED_PIN     8
 
 // How many NeoPixels are attached to the Arduino?
 #define LED_COUNT  46 // button_string 22 + front_ring 24
 
 // NeoPixel brightness, 0 (min) to 255 (max)
-#define BRIGHTNESS 100
+#define BRIGHTNESS 200
 
 
 

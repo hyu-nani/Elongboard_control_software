@@ -40,22 +40,22 @@ void OUTPUT_12V(uint8_t A,uint8_t B)
 //NEO ACTION MENU
 void NEO_Action(uint8_t B_State,uint8_t T_State){//(B.state , T.state)
 	if(B_State == 0){}
-	else if(B_State == 1){B_ALL_TurnOff();}								//����OFF
-	else if(B_State == 2){B_Color(change_r,change_g,change_b,change_w);}		//�ܻ� ǥ��
-	else if(B_State == 3){B_WHITE_Grade(240,1);}					//���?����
-	else if(B_State == 4){B_filcker();}			//�������õ�											xx
-	else if(B_State == 5){B_Rainbow();}	//������ �ϴܹ߱�
+	else if(B_State == 1){B_ALL_TurnOff();}								
+	else if(B_State == 2){B_Color(change_r,change_g,change_b,change_w);}		
+	else if(B_State == 3){B_WHITE_Grade(240,1);}					
+	else if(B_State == 4){B_filcker();}			
+	else if(B_State == 5){B_Rainbow();}	
 	else if(B_State == 6){B_Gradual_color(change_r,change_g,change_b,change_w);}	
-	else if(B_State == 7){safety_lamp();}	//		xx
+	else if(B_State == 7){safety_lamp();}	
 
 	if(T_State == 0){}		
-	else if(T_State == 1){T_ALL_TurnOff();}									//����OFF
-	else if(T_State == 2){T_Color(change_r,change_g,change_b,change_w);}			//�ܻ� ǥ��
-	else if(T_State == 3){T_WHITE_Grade(150,1);}						//�޽�
-	else if(T_State == 4){T_Rotate_3color(change_r,change_g,change_b,change_w,70);}		//ȸ��
+	else if(T_State == 1){T_ALL_TurnOff();}									
+	else if(T_State == 2){T_Color(change_r,change_g,change_b,change_w);}			
+	else if(T_State == 3){T_WHITE_Grade(150,1);}						
+	else if(T_State == 4){T_Rotate_3color(change_r,change_g,change_b,change_w,70);}	
 	else if(T_State == 5){T_Rotate_1color(change_r,change_g,change_b,change_w,70);}
-	else if(T_State == 6){T_filcker();}						//										xx
-	else if(T_State == 7){Compass();}									//��ħ��						xx
+	else if(T_State == 6){T_filcker();}						
+	else if(T_State == 7){Compass();}									
 	else if(T_State == 8){Show_Battery_Amount(analogRead(Bat_Voltage));}
 	else if(T_State == 9){T_Rainbow();}
 	strip.show();
