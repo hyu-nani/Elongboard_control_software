@@ -19,7 +19,7 @@ int bat_maxlevel = 850;
 int bat_minlevel = 720;
 
 const bool BT_SET	=	false;
-const bool TEST		=	false;
+const bool TEST		=	true;
 bool mpu_status	=	false;
 bool hmc_status	=	false;
 
@@ -42,7 +42,7 @@ char String_data[string_buffer_size]; //buffer size
 char keypad_data = 'n';
 //N: 
 void setup() {
-	Serial.begin(38400);
+	Serial.begin(115200);
 	/* //bluetooth AT command setting motion */
 	if(BT_SET == true)	BT_Serial.begin(9600);
 	else				BT_Serial.begin(38400);
@@ -79,7 +79,7 @@ void setup() {
 	if(TEST==true){Serial.println("N: get data from EEPROM ");}
 	GY_begin();
 	if(TEST==true){Serial.println("N: GY_87 begin ");}
-		
+		//if(TEST==true){Serial.println("N: ");}
 	
 	
 	

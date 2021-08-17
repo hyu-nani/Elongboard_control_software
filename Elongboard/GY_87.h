@@ -20,29 +20,29 @@ HMC5883L mag;
 int16_t ax, ay, az;
 int16_t gx, gy, gz;
 int16_t mx, my, mz;
+
 int Head;
 int min_head,max_head;
 int old_ax,old_ay;
+
 void GY_begin() 
 {
 	Wire.begin();
 	accelgyro.setI2CMasterModeEnabled(false);
 	accelgyro.setI2CBypassEnabled(true) ;
 	accelgyro.setSleepEnabled(false);
-
-	BT_Serial.println("Initializing I2C devices...");
+	if(TEST==true){Serial.println("N: Initializing I2C devices...");}
 	accelgyro.initialize();
 	mag.initialize();
-	BT_Serial.println(mag.testConnection() ? "HMC5883L connection successful" : "HMC5883L connection failed");
+	if(TEST==true){Serial.println(mag.testConnection() ? "N: HMC5883L connection successful" : "N: HMC5883L connection failed");}
 
 	// verify connection
-	BT_Serial.println("Testing device connections...");
-	BT_Serial.println(accelgyro.testConnection() ? "MPU6050 connection successful" : "MPU6050 connection failed");
+	if(TEST==true){Serial.println("N: Testing device connections...");}
+	if(TEST==true){Serial.println(accelgyro.testConnection() ? "N: MPU6050 connection successful" : "N: MPU6050 connection failed");}
 	//begin() initializes the interface, checks the sensor ID and reads the calibration parameters.
 	if (!bmp180.begin())
 	{
-		Serial.println("begin() failed. check your BMP180 Interface and I2C Address.");
-		while (1);
+		if(TEST==true){Serial.println(accelgyro.testConnection() ? "N: begin() failed. check your BMP180 Interface and I2C Address." : " ");}
 	}
 
 	//reset sensor to default parameters.
