@@ -24,13 +24,13 @@ void Serial_Action(char str[])
 	
 	
 	       
-	//���ڿ� ó�� ������ ������	D[BN:x/TN:x/1O:x/2O:x]
-	//          RGB				C[R:1xxx/G:1xxx/B:1xxx/W:1xxx] 
-	//			������ Ȯ�ο�		Autodata
-	//			RGB �� Ȯ�ο�	Basecolor
-	//         ������ ������ [BN:x/TN:x/1O:x/2O:x/CH:x/ST:x]
+	//			D[BN:x/TN:x/1O:x/2O:x]
+	//          RGB		transform	text	C[R:1xxx/G:1xxx/B:1xxx/W:1xxx] 
+	//			data receive code"Autodata"
+	//			RGB receive code "Basecolor"
+	//          data	transform	text	D[BN:x/TN:x/1O:x/2O:x/CH:x/ST:x]
 	
-	while(1){
+	while(true){
 		
 		if(str[num] == 'D' ){	//D[BN:x/TN:x/1O:x/2O:x]24
 			num = 0;

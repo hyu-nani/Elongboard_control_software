@@ -1,7 +1,5 @@
 
-uint8_t		B_NEO_State,T_NEO_State;			//NEO action
-uint16_t	change_r=0,change_g=0,change_b=0,change_w=0;		//COLOR
-uint8_t		OUT1_Data, OUT2_Data,Charge_status;	//othe
+
 void OUTPUT_12V(uint8_t A,uint8_t B);
 
 //===============================================================
@@ -71,7 +69,7 @@ void NEO_Action(uint8_t B_State,uint8_t T_State){//(B.state , T.state)
 		
 	
 }
-int mpu_time=1000;
+
 void Default_Action()
 {
 	nowtime = millis();

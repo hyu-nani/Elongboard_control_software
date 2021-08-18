@@ -85,12 +85,6 @@
       <Value>../../../Elongboard</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/EEPROM/src</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/I2Cdev</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/MPU6050</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/HMC5883L</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/BMP180MI/src</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/Adafruit_NeoPixel</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/eightanaloginputs</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include</Value>
@@ -127,12 +121,6 @@
       <Value>../../../Elongboard</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/EEPROM/src</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/I2Cdev</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/MPU6050</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/HMC5883L</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/BMP180MI/src</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/Adafruit_NeoPixel</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/eightanaloginputs</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include</Value>
@@ -684,12 +672,6 @@ build.arch=AVR
       <Value>../../../Elongboard</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/EEPROM/src</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/I2Cdev</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/MPU6050</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/HMC5883L</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/BMP180MI/src</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/Adafruit_NeoPixel</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/eightanaloginputs</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include</Value>
@@ -726,12 +708,6 @@ build.arch=AVR
       <Value>../../../Elongboard</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/SoftwareSerial/src</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/EEPROM/src</Value>
-      <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/libraries/Wire/src</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/I2Cdev</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/MPU6050</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/HMC5883L</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/BMP180MI/src</Value>
-      <Value>C:/Users/cube_/OneDrive/문서/Arduino/libraries/Adafruit_NeoPixel</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/cores/arduino</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/arduino/avr/variants/eightanaloginputs</Value>
       <Value>C:/Program Files (x86)/Arduino/hardware/tools/avr//lib/gcc/avr/7.3.0/include</Value>
@@ -1269,6 +1245,9 @@ build.arch=AVR
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="Board.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="data.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="GY_87.h">

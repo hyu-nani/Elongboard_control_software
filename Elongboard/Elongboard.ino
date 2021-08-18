@@ -12,34 +12,14 @@ SoftwareSerial BT_Serial(3, 2);
  * Change: 7/25/2020
  */ 
 
-#define string_buffer_size		80
-#define charge_sensivity		810
-
-int bat_maxlevel = 850;
-int bat_minlevel = 720;
-
-const bool BT_SET	=	false;
-const bool TEST		=	true;
-bool mpu_status	=	false;
-bool hmc_status	=	false;
-
-int initialize_neo = 0;
-int Temp,Pressure,Heading,acc;
-
-unsigned long maintime ;
-unsigned long nowtime = millis();
-
-
-int	i = 0;
-
+#include "data.h"
 #include "Board.h"
 #include "GY_87.h"
 #include "NeoPixel.h"
 #include "Action.h"
 #include "String_Process.h"
 
-char String_data[string_buffer_size]; //buffer size
-char keypad_data = 'n';
+
 //N: 
 void setup() {
 	Serial.begin(115200);

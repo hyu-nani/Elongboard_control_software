@@ -21,9 +21,7 @@ int16_t ax, ay, az;
 int16_t gx, gy, gz;
 int16_t mx, my, mz;
 
-int Head;
-int min_head,max_head;
-int old_ax,old_ay;
+
 
 void GY_begin() 
 {

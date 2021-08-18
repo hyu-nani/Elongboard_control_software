@@ -36,15 +36,7 @@ Adafruit_NeoPixel strip(LED_COUNT, LED_PIN, NEO_GRBW + NEO_KHZ800);
 //   NEO_RGB     Pixels are wired for RGB bitstream (v1 FLORA pixels, not v2)
 //   NEO_RGBW    Pixels are wired for RGBW bitstream (NeoPixel RGBW products)
 
-unsigned long pretime_B,pretime_T,pretime_A;
-int		Aupdown,Tupdown,Bupdown;
-int		Avalue	=	0;
-int		Tvalue	=	0;
-int		Bvalue	=	0;
-int		count	=	0;
-int rate_r,rate_g,rate_b,rate_w,current_r,current_g,current_b,current_w;
-int old_r,old_g,old_b,old_w;
-const int rate_value = 100;
+
 
 void neo_setting()
 {
@@ -266,11 +258,7 @@ void T_Color(uint8_t red,uint8_t green,uint8_t blue,uint8_t white)  //top ��
 
 
 
-int      tail          = 0;
-int      loops         = 3;
-int      loopNum       = 0;
-uint32_t lastTime      = millis();
-uint32_t firstPixelHue = 0;
+
 void B_Rainbow() {
 	if(initialize_neo == 0){
 	}
@@ -305,9 +293,7 @@ void T_Rainbow() {
 
 	firstPixelHue += 120; // Advance just a little along the color wheel
 }
-int old_gz;
 
-int sensivity_fliker =3000;
 void B_filcker(){ //������
 	if(initialize_neo == 0){
 	}
@@ -510,8 +496,7 @@ void T_Rotate_3color(uint8_t red, uint8_t green, uint8_t blue, uint8_t white, ui
 		pretime_T = nowtime;
 	}	
 }
-int sum=0;
-int grad_count=0;
+
 void B_Gradual_color(uint8_t red, uint8_t green, uint8_t blue, uint8_t white)
 {
 	if(initialize_neo == 0){
