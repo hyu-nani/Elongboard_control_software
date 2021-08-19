@@ -71,8 +71,8 @@ PB
 */
 
 
-#define Bat_Voltage A0
-#define DC_IN		  A1
+#define Bat_Voltage	A0
+#define DC_IN		A1
 #define keypad1		A2
 #define keypad2		A3
 #define keypad3		A6
@@ -107,10 +107,10 @@ void setting_pin()
 	pinMode(OUT12_2,OUTPUT);
 	pinMode(LED,OUTPUT);
 	
+	//initial setting
 	digitalWrite(OUT12_2,LOW);
 	digitalWrite(OUT12_1,LOW);
-	delay(1);
-	
+	delay(10);
 }
 /*
 

@@ -84,6 +84,11 @@ void setup() {
 	maintime = nowtime;
 }
 
+
+/************************************************************************/
+/*                              LOOP                                    */
+/************************************************************************/
+
 void loop() {
 	
     // if(analogRead(DC_IN)>charge_sensivity){
@@ -93,7 +98,7 @@ void loop() {
 	
 	//============================run mode==============================
 	basic_cycle:
-	while(1){
+	while(true){
 		digitalWrite(LED,LOW);
 		nowtime = millis();
 		if(BT_Serial.available() > 0){
@@ -144,11 +149,11 @@ void loop() {
 				i = 0;
 				while(BT_Serial.available() > 0){ //buffer receive
 					String_data[i] = BT_Serial.read();
+					i++;
 					if(i%25 == 0){//led output
 				   		T_Rotate_1color(10,110,200,0,1);
 					}
 					if(TEST==true){BT_Serial.println(String_data[i]);} //testing
-					i++;
 					if(i>string_buffer_size){
 						break;
 					}
@@ -176,7 +181,7 @@ void loop() {
   
 	//========================= keypad setting mode ===========================
 	Keypad_setting_mode:
-	while(1){
+	while(true){
 		digitalWrite(LED,HIGH);
 		while(keypad_data != 'n'){
 			digitalWrite(OUT12_1,HIGH);
@@ -210,7 +215,7 @@ void loop() {
   
 	//========================= Serial data receive ============================
 	Serial_data_receive:
-	while(1){
+	while(true){
 		if(TEST == true){
 			BT_Serial.print("N: Number of strings: ");
 			BT_Serial.println(BT_Serial.available());
@@ -262,7 +267,7 @@ void loop() {
 	digitalWrite(LED,LOW);
 	ALL_TurnOff();
 	OUTPUT_12V(0,0);
-	while(1){ //charging mode
+	while(true){ //charging mode
 		B_ALL_TurnOff();//?òÎã®Î∂Ä OFF, ?ÅÎã®Î∂ÄÎ∞∞ÌÑ∞Î¶??úÏãú
 		Show_Battery_Amount_charge(analogRead(Bat_Voltage));
 		nowtime = millis();
