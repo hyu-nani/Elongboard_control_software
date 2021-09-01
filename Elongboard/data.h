@@ -8,7 +8,7 @@ int				bat_maxlevel		=	850;
 int				bat_minlevel		=	720;
 
 const bool		BT_SET				=	false;
-const bool		TEST				=	true;
+const bool		TEST				=	false;
 bool			mpu_status			=	false;
 bool			hmc_status			=	false;
 
